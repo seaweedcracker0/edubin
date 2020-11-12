@@ -1,0 +1,16 @@
+.section-title h5{
+    font-size: 23px;
+}
+
+.register-label{
+    font-weight: 700;
+    font-size: 15px;
+}
+
+.forgotpassword-link a{
+    color: #07294d;
+}
+
+.forgotpassword-link a:hover{
+    color: #ffc600;
+}

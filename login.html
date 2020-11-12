@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+
+    <!--====== Favicon Icon ======-->
+    <link rel="shortcut icon" href="images/favicon.png" type="image/png">
+
+    <!--====== Slick css ======-->
+    <link rel="stylesheet" href="css/slick.css">
+
+    <!--====== Animate css ======-->
+    <link rel="stylesheet" href="css/animate.css">
+
+    <!--====== Nice Select css ======-->
+    <link rel="stylesheet" href="css/nice-select.css">
+
+    <!--====== Nice Number css ======-->
+    <link rel="stylesheet" href="css/jquery.nice-number.min.css">
+
+    <!--====== Magnific Popup css ======-->
+    <link rel="stylesheet" href="css/magnific-popup.css">
+
+    <!--====== Bootstrap css ======-->
+    <link rel="stylesheet" href="css/bootstrap.min.css">
+
+    <!--====== Fontawesome css ======-->
+    <link rel="stylesheet" href="css/font-awesome.min.css">
+
+    <!--====== Default css ======-->
+    <link rel="stylesheet" href="css/default.css">
+
+    <!--====== Style css ======-->
+    <link rel="stylesheet" href="css/style.css">
+
+    <!--====== Responsive css ======-->
+    <link rel="stylesheet" href="css/responsive.css">
+
+    <!--====== Custom css ======-->
+    <link rel="stylesheet" href="css/custom.css">
+</head>
+
+<body>
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader rubix-cube">
+            <div class="layer layer-1"></div>
+            <div class="layer layer-2"></div>
+            <div class="layer layer-3 color-1"></div>
+            <div class="layer layer-4"></div>
+            <div class="layer layer-5"></div>
+            <div class="layer layer-6"></div>
+            <div class="layer layer-7"></div>
+            <div class="layer layer-8"></div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <section id="login-page" class="pt-90 pb-90 gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-from mt-30">
+                        <div class="section-title">
+                            <h5>Login</h5>
+                        </div> <!-- section title -->
+                        <div class="main-form pt-45">
+                            <form id="login-form" action="#" method="post" data-toggle="validator">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="singel-form form-group">
+                                            <label class="register-label">User Name</label>
+                                            <input name="userName" type="text" placeholder="User Name"
+                                                data-error="User name is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="singel-form form-group">
+                                            <label class="register-label">Password</label>
+                                            <input name="password" type="password" placeholder="Password"
+                                                data-error="Password is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="singel-form form-group">
+                                            <div class="forgotpassword-link">
+                                                <a href="#">Forgot Password?</a>
+                                            </div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <!-- <p class="form-message"></p> -->
+                                    <div class="col-12">
+                                        <div class="singel-form">
+                                            <button type="submit" class="register-btn">Login</button>
+                                            <button type="button" class="register-btn">Create a new account</button>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                </div> <!-- row -->
+                            </form>
+                        </div> <!-- main form -->
+                    </div> <!--  login from -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <section id="register-page" class="pt-90 pb-90 gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-from mt-30">
+                        <div class="section-title">
+                            <h5>Register</h5>
+                            <!-- <h2>Keep in touch</h2> -->
+                        </div> <!-- section title -->
+                        <div class="main-form pt-45">
+                            <form id="register-form" action="#" method="post" data-toggle="validator">
+                                <div class="row">
+                                    <div class="col-12 col-md-6">
+                                        <div class="singel-form form-group">
+                                            <label class="register-label">First Name</label>
+                                            <input name="firstName" type="text" placeholder="First Name"
+                                                data-error="First name is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="singel-form form-group">
+                                            <label class="register-label">Last Name</label>
+                                            <input name="lastName" type="text" placeholder="Last Name"
+                                                data-error="Last name is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="singel-form form-group">
+                                            <label class="register-label">User Name</label>
+                                            <input name="userName" type="text" placeholder="User Name"
+                                                data-error="User name is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="singel-form form-group">
+                                            <label class="register-label">Email</label>
+                                            <input name="email" type="email" placeholder="Email"
+                                                data-error="Valid email is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="singel-form form-group">
+                                            <label class="register-label">Password</label>
+                                            <input name="password" type="password" placeholder="Password"
+                                                data-error="Password is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="singel-form form-group">
+                                            <label class="register-label">Password Confirmation</label>
+                                            <input name="passwordcom" type="password"
+                                                placeholder="Password confirmation"
+                                                data-error="Password confirmation is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <!-- <p class="form-message"></p> -->
+                                    <div class="col-12">
+                                        <div class="singel-form text-right">
+                                            <button type="submit" class="register-btn">Register</button>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                </div> <!-- row -->
+                            </form>
+                        </div> <!-- main form -->
+                    </div> <!--  register from -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <section id="forgotpassword-page" class="pt-90 pb-90 gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="contact-from mt-30">
+                        <div class="section-title">
+                            <h5>Reset Password</h5>
+                            <!-- <h2>Keep in touch</h2> -->
+                        </div> <!-- section title -->
+                        <div class="main-form pt-45">
+                            <form id="register-form" action="#" method="post" data-toggle="validator">
+                                <div class="row">
+                                    <div class="col-12">
+                                        <div class="singel-form form-group">
+                                            <p>Lost your password? Please enter your email address. You will
+                                                receive a link to create a new password via email.</p>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="singel-form form-group">
+                                            <label class="register-label">Email</label>
+                                            <input name="email" type="email" placeholder="Email"
+                                                data-error="Valid email is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <!-- <p class="form-message"></p> -->
+                                    <div class="col-12">
+                                        <div class="singel-form">
+                                            <button type="submit" class="register-btn">Reset Password</button>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                </div> <!-- row -->
+                            </form>
+                        </div> <!-- main form -->
+                    </div> <!--  register from -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+
+    <!--====== jquery js ======-->
+    <script src="js/vendor/modernizr-3.6.0.min.js"></script>
+    <script src="js/vendor/jquery-1.12.4.min.js"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
+
+    <!--====== Bootstrap js ======-->
+    <script src="js/bootstrap.min.js"></script>
+
+    <!--====== Slick js ======-->
+    <script src="js/slick.min.js"></script>
+
+    <!--====== Magnific Popup js ======-->
+    <script src="js/jquery.magnific-popup.min.js"></script>
+
+    <!--====== Counter Up js ======-->
+    <script src="js/waypoints.min.js"></script>
+    <script src="js/jquery.counterup.min.js"></script>
+
+    <!--====== Nice Select js ======-->
+    <script src="js/jquery.nice-select.min.js"></script>
+
+    <!--====== Nice Number js ======-->
+    <script src="js/jquery.nice-number.min.js"></script>
+
+    <!--====== Count Down js ======-->
+    <script src="js/jquery.countdown.min.js"></script>
+
+    <!--====== Validator js ======-->
+    <script src="js/validator.min.js"></script>
+
+    <!--====== Ajax Contact js ======-->
+    <script src="js/ajax-contact.js"></script>
+
+    <!--====== Main js ======-->
+    <script src="js/main.js"></script>
+</body>
+
+</html>

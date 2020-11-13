@@ -25,7 +25,12 @@ section{
 }
 
 .nice-select.open .list{
-    width: 100%;
+    width: 100%;    
+}
+
+.nice-select .list{
+    max-height: 200px;
+    overflow-y: auto;
 }
 
 .dropdown-menu{

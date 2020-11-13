@@ -45,3 +45,47 @@ section{
 .forgotpassword-link a:hover{
     color: #ffc600;
 }
+
+.icon-sub-menu{
+    position: absolute;
+    top: 110%;
+    left: 0;
+    background-color: #07294d;
+    width: 200px;
+    opacity: 0;
+    visibility: hidden;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+    z-index: 99;
+}
+
+ul.icon-sub-menu li {
+    display: block;
+    padding: 0;
+    margin: 0;
+    text-align: left;
+}
+
+ul.icon-sub-menu li a{
+    padding: 10px 15px;
+    display: block;
+    border-bottom: 1px solid rgba(255, 198, 0, 0.5);
+    color: #fff;
+    font-size: 14px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    text-transform: uppercase;
+    -webkit-transition: all 0.4s linear;
+    transition: all 0.4s linear;
+}
+
+ul.icon-sub-menu li a:hover{
+    padding-left: 20px;
+    color: #ffc600;
+}
+
+.icon-nav .nav-item:hover .icon-sub-menu{
+    opacity: 1;
+    visibility: visible;
+    top: 100%;
+}

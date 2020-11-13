@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="en" ng-app="edubin">
 
 <head>
     <meta charset="UTF-8">
@@ -43,7 +43,7 @@
     <link rel="stylesheet" href="css/custom.css">
 </head>
 
-<body>
+<body ng-controller="LoginController" ng-init="initComponentController()">
     <!--====== PRELOADER PART START ======-->
 
     <div class="preloader">
@@ -61,7 +61,7 @@
 
     <!--====== PRELOADER PART START ======-->
 
-    <section id="login-page" class="pt-90 pb-90 gray-bg">
+    <section id="login-page" class="pt-20 pb-90 gray-bg" ng-hide="loginPage">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -74,9 +74,9 @@
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="singel-form form-group">
-                                            <label class="register-label">User Name</label>
-                                            <input name="userName" type="text" placeholder="User Name"
-                                                data-error="User name is required." required="required">
+                                            <label class="register-label">User id</label>
+                                            <input name="userId" type="text" placeholder="User id"
+                                                data-error="User id is required." required="required">
                                             <div class="help-block with-errors"></div>
                                         </div> <!-- singel form -->
                                     </div>
@@ -91,15 +91,15 @@
                                     <div class="col-12">
                                         <div class="singel-form form-group">
                                             <div class="forgotpassword-link">
-                                                <a href="#">Forgot Password?</a>
+                                                <a href="#" ng-click="forgotPassPage = false; loginPage = true;">Forgot Password?</a>
                                             </div>
                                         </div> <!-- singel form -->
                                     </div>
                                     <!-- <p class="form-message"></p> -->
                                     <div class="col-12">
                                         <div class="singel-form">
-                                            <button type="submit" class="register-btn">Login</button>
-                                            <button type="button" class="register-btn">Create a new account</button>
+                                            <button type="submit" class="register-btn">Login</button>                                            
+                                            <button type="button" ng-click="registerPage = false; loginPage = true; resetForm();" class="register-btn">Create a new account</button>
                                         </div> <!-- singel form -->
                                     </div>
                                 </div> <!-- row -->
@@ -111,7 +111,7 @@
         </div> <!-- container -->
     </section>
 
-    <section id="register-page" class="pt-90 pb-90 gray-bg">
+    <section id="register-page" class="pt-20 pb-90 gray-bg" ng-hide="registerPage">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -141,9 +141,9 @@
                                     </div>
                                     <div class="col-12 col-md-6">
                                         <div class="singel-form form-group">
-                                            <label class="register-label">User Name</label>
-                                            <input name="userName" type="text" placeholder="User Name"
-                                                data-error="User name is required." required="required">
+                                            <label class="register-label">User id</label>
+                                            <input name="userId" type="text" placeholder="User id"
+                                                data-error="User id is required." required="required">
                                             <div class="help-block with-errors"></div>
                                         </div> <!-- singel form -->
                                     </div>
@@ -172,10 +172,44 @@
                                             <div class="help-block with-errors"></div>
                                         </div> <!-- singel form -->
                                     </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="singel-form form-group">
+                                            <label class="register-label">Role</label>
+                                            <select class="custom-dropdown" 
+                                                ng-options="item.value for item in registerType" 
+                                                required ng-model="selected" 
+                                                ng-change="showSchoolField(selected)">
+                                            </select>
+                                        </div>
+                                    </div>
+                                    <div class="col-12 col-md-6" ng-show="school">
+                                        <div class="singel-form form-group">
+                                            <label class="register-label">Address</label>
+                                            <input name="address" type="text" placeholder="Address"
+                                                data-error="Address is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12 col-md-6" ng-show="school">
+                                        <div class="singel-form form-group">
+                                            <label class="register-label">State</label>
+                                            <input name="state" type="text" placeholder="State"
+                                                data-error="State is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12 col-md-6" ng-show="school">
+                                        <div class="singel-form form-group">
+                                            <label class="register-label">Contact no</label>
+                                            <input name="contactNo" type="text" placeholder="Contact no"
+                                                data-error="Contact no is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
                                     <!-- <p class="form-message"></p> -->
                                     <div class="col-12">
                                         <div class="singel-form text-right">
-                                            <button type="submit" class="register-btn">Register</button>
+                                            <button type="submit" ng-click="registerPage = true; loginPage = false; resetForm();" class="register-btn">Register</button>                                            
                                         </div> <!-- singel form -->
                                     </div>
                                 </div> <!-- row -->
@@ -187,7 +221,7 @@
         </div> <!-- container -->
     </section>
 
-    <section id="forgotpassword-page" class="pt-90 pb-90 gray-bg">
+    <section id="forgotpassword-page" class="pt-20 pb-90 gray-bg" ng-hide="forgotPassPage">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12">
@@ -197,7 +231,7 @@
                             <!-- <h2>Keep in touch</h2> -->
                         </div> <!-- section title -->
                         <div class="main-form pt-45">
-                            <form id="register-form" action="#" method="post" data-toggle="validator">
+                            <form id="forgotpassword-form" action="#" method="post" data-toggle="validator">
                                 <div class="row">
                                     <div class="col-12">
                                         <div class="singel-form form-group">
@@ -216,7 +250,7 @@
                                     <!-- <p class="form-message"></p> -->
                                     <div class="col-12">
                                         <div class="singel-form">
-                                            <button type="submit" class="register-btn">Reset Password</button>
+                                            <button type="submit" ng-click="resetForm();" class="register-btn">Reset Password</button>
                                         </div> <!-- singel form -->
                                     </div>
                                 </div> <!-- row -->
@@ -232,6 +266,7 @@
     <!--====== jquery js ======-->
     <script src="js/vendor/modernizr-3.6.0.min.js"></script>
     <script src="js/vendor/jquery-1.12.4.min.js"></script>
+    <script src="js/vendor/angular.min.js"></script>
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js"></script>
 
@@ -265,6 +300,8 @@
 
     <!--====== Main js ======-->
     <script src="js/main.js"></script>
+    <script src="js/app.js"></script>
+    <script src="js/login.controller.js"></script>
 </body>
 
 </html>

@@ -1,3 +1,6 @@
+section{
+    min-height: 100vh;
+}
 .section-title h5{
     font-size: 23px;
 }
@@ -5,6 +8,29 @@
 .register-label{
     font-weight: 700;
     font-size: 15px;
+}
+
+.custom-dropdown{
+    width: 100%;
+    height: 50px;
+    padding: 0 20px;
+    border: 1px solid #a1a1a1;
+    border-radius: 5px;
+    color: #8a8a8a;
+    font-size: 15px;
+    background: rgb(255, 255, 255);
+    text-align: left;
+    display: flex;
+    align-items: center;
+}
+
+.nice-select.open .list{
+    width: 100%;
+}
+
+.dropdown-menu{
+    border: 1px solid #a1a1a1;
+    width: 100%;
 }
 
 .forgotpassword-link a{

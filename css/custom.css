@@ -5,6 +5,12 @@ section{
     font-size: 23px;
 }
 
+.logo img{
+    width: 179px;
+    height: 49px;
+    object-fit: cover;
+}
+
 .register-label{
     font-weight: 700;
     font-size: 15px;

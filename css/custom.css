@@ -118,3 +118,23 @@ ul.icon-sub-menu li a:hover{
     visibility: visible;
     top: 100%;
 }
+
+/* Owl Carousel Extra CSS Start */
+.box-shadowed {
+    -webkit-box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.08) !important;
+    -moz-box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.08) !important;
+    box-shadow: 0 1px 15px 1px rgba(0, 0, 0, 0.08) !important;
+}
+
+.pull-up {
+    -webkit-transition: all .25s ease;
+    -o-transition: all .25s ease;
+    -moz-transition: all .25s ease;
+    transition: all .25s ease;
+}
+
+.my-15 {
+    margin-top: 15px !important;
+    margin-bottom: 15px !important;
+}
+/* Owl Carousel Extra CSS End */

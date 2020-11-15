@@ -5,11 +5,37 @@ section{
     font-size: 23px;
 }
 
+/* Header Part Start*/
+
 .logo img{
     width: 179px;
     height: 49px;
     object-fit: cover;
 }
+
+.header-contact ul li i{
+    color: #ffc600;
+}
+.login-register ul li.nav-item{
+    position: relative;
+}
+
+.login-register ul li{
+    color: #ffc600;
+    margin: 0 10px;
+}
+
+.login-register ul li a{
+    color: #ffc600;
+}
+
+.header-contact ul li.top-seperator{
+    margin: 0;
+    padding: 0;
+    color: #ffffff;
+}
+
+/* Header Part End*/
 
 .register-label{
     font-weight: 700;

@@ -52,6 +52,19 @@ function fonts() {
       .pipe(gulp.dest(out))
 }
 
+
+// watch all changes
+function watchFiles() {
+    gulp.watch(folder.src + "*.html", gulp.series(html));
+    gulp.watch(folder.src + "partials/*.html", gulp.series(html));   
+    gulp.watch(folder.src + "css/*.css", gulp.series(css));
+    gulp.watch(folder.src + "js/*.js", gulp.series(js));
+}
+
+// watch all changes
+gulp.task("watch", gulp.parallel(watchFiles));
+
+
 // build
 gulp.task(
     "build",

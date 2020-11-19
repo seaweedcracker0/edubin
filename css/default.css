@@ -887,7 +887,9 @@
 	padding-right: 105px;
 }
 /* Background Color */
-
+.bg-lightest {
+    background: #f3f6f9;
+}
 .gray-bg {
 	background: #edf0f2;
 }
@@ -896,6 +898,9 @@
 }
 .black-bg {
 	background: #222;
+}
+.dark-blue {
+	background: #07294d;
 }
 /* Color */
 
@@ -940,4 +945,13 @@
 }
 [data-overlay="9"]::before {
 	opacity: 0.9;
+}
+.font-size-14{
+	font-size: 14px;
+}
+.font-size-16{
+	font-size: 16px;
+}
+.font-weight-600{
+	font-weight: 600;
 }

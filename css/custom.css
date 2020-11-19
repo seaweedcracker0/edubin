@@ -23,6 +23,7 @@
 }
 
 .login-register ul li a{
+    font-family: 'Roboto', sans-serif;
     color: #ffc600;
 }
 
@@ -138,3 +139,246 @@ ul.icon-sub-menu li a:hover{
     margin-bottom: 15px !important;
 }
 /* Owl Carousel Extra CSS End */
+
+/* My Profile */
+.box {
+    position: relative;
+    margin-bottom: 30px;
+    width: 100%;
+    background-color: #ffffff;
+    border-radius: 5px;
+    padding: 0px;
+    -webkit-transition: .5s;
+    transition: .5s;
+    display: -ms-flexbox;
+    display: flex;
+    -ms-flex-direction: column;
+    flex-direction: column;
+    -webkit-box-shadow: 0 0 30px 0 rgba(82, 63, 105, 0.05);
+    box-shadow: 0 0 30px 0 rgba(82, 63, 105, 0.05);
+}
+
+.box-body{
+    padding: 1.5rem 1.5rem;
+    -ms-flex: 1 1 auto;
+    flex: 1 1 auto;
+    border-radius: 5px;
+}
+
+.bb-1 {
+    border-bottom: 1px solid #f3f6f9 !important;
+}
+
+.teachers-left {
+    padding: 1.5rem 0 35px;
+    background-color: #fff;
+    border-radius: 5px;
+}
+
+.teachers-left .name {
+    padding-top: 0px;
+    margin-top: 5px;
+    margin-left: 15px;
+}
+
+.widget-user-2 .widget-user-image > img {
+    width: 65px;
+    height: auto;
+    float: left;
+}
+
+.box-footer {
+    border-top: 1px solid rgba(0, 0, 0, 0.07);
+    padding: 0;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+}
+
+.box-footer ul li a{
+    color: #07294d;
+}
+
+.box-footer ul li a.active{
+    color: #fff;
+    background: #07294d;
+}
+
+.box-footer ul li a:hover{
+    color: #ffc600;
+}
+
+.teachers-right .tab-content {
+    padding: 0px;
+}
+
+.teachers-right .tab-content .tab-pane{
+    padding: 0px 25px 35px;
+}
+
+.teachers-right .tab-content .tab-pane.nopadding{
+    padding: 0px;
+}
+
+.table.no-border td, .table.no-border th {
+    border: 0;
+}
+
+.badge-lg {
+    line-height: 1.5;
+    padding: 5px 7px;
+    font-size: 95%;
+}
+
+.waves-effect{
+    background: #1d2025;
+    border: 1px solid #1d2025;
+    margin-right: 10px;
+    color: #ffffff;
+}
+
+a.waves-effect:hover{
+    color: #ffc600;
+}
+
+.btn-circle.btn-xs {
+    width: 30px;
+    height: 30px;
+    line-height: 30px;
+    padding: 0;
+    border-radius: 100%;
+}
+
+.h-50px{
+    height: 50px;
+} 
+.w-50px{
+    width: 50px;
+}
+
+
+.teachers-right .tab-content{
+    
+}
+/* Card */
+.card {
+    border-radius: 5px;
+    box-shadow: 0px 2px 5px 0px rgba(19, 23, 38, 0.05);
+    margin-bottom: 30px;
+}
+.card .horizontal-img{
+    height: 100%;
+}
+.card-img-top {
+border-top-left-radius: 5px;
+border-top-right-radius: 5px;
+}
+.card-body {
+padding: 1.5rem 1rem;
+}
+.card-body .card-title {
+margin-bottom: 0.75rem;
+border-bottom: none;
+}
+.card-body .cour-stac p{
+font-size: 14px;
+}
+.card-header {
+display: -webkit-box;
+display: flex;
+-webkit-box-pack: justify;
+justify-content: space-between;
+-webkit-box-align: center;
+align-items: center;
+padding: 1.5rem 1.5rem;
+background-color: transparent;
+border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.card-header .card-title {
+padding: 0;
+border: none;
+}
+.card-header > *:first-child {
+margin-left: 0;
+}
+.card-header > *:last-child {
+margin-right: 0;
+}
+.card-header > * {
+margin-left: 8px;
+margin-right: 8px;
+}
+.card-title {
+margin-bottom: 0;
+border-bottom: 1px solid rgba(0, 0, 0, 0.07);
+}
+.card-controls {
+list-style-type: none;
+padding-left: 0;
+margin-bottom: 0;
+display: -webkit-box;
+display: flex;
+-webkit-box-orient: horizontal;
+-webkit-box-direction: reverse;
+flex-direction: row-reverse;
+}
+.card-controls [data-toggle="dropdown"], .card-controls .card-btn-reload {
+font-size: 14px;
+}
+.card-controls li > a {
+font-size: 12px;
+display: inline-block;
+padding: 0 4px;
+margin: 0 4px;
+color: #608acf;
+opacity: 0.8;
+-webkit-transition: 0.3s linear;
+transition: 0.3s linear;
+}
+.card-footer {
+padding: 1rem 1rem;
+background-color: transparent;
+}
+.card-inverse {
+color: #fff !important;
+background-color: #000;
+}
+.card-inverse h1, .card-inverse h2, .card-inverse h3, .card-inverse h4, .card-inverse h5, .card-inverse h6, .card-inverse .card-title, .card-inverse small, .card-inverse .card-controls li > a {
+color: #fff !important;
+}
+.t-10 {
+top: 0.7142857143rem;
+}
+.r-10 {
+right: 0.7142857143rem;
+}
+.no-shadow {
+box-shadow: none !important;
+}
+.no-border {
+    border: 0 !important;
+}
+  
+@media (min-width: 992px){
+    .w-lg-300 {
+        width: 300px;
+    }
+}
+#pills-payments .tab-pane{
+    padding: 10px 0px;
+}
+#pills-payments ul li a{
+    padding: .5rem 1rem;
+    background-color: #fff;
+    color: #07294d;
+    border-color: #e9ecef #e9ecef #dee2e6;
+}
+#pills-payments ul li a.active{
+    background-color: #07294d;
+    color: #fff;
+    border-color: #315377;
+}
+
+.lt-sp{
+    margin-left: 10px;
+    margin-right: 10px;
+}

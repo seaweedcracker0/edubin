@@ -267,6 +267,7 @@ a.waves-effect:hover{
 }
 .card .horizontal-img{
     height: 100%;
+    object-fit: cover;
 }
 .card-img-top {
 border-top-left-radius: 5px;

@@ -256,9 +256,9 @@ a.waves-effect:hover{
 }
 
 
-.teachers-right .tab-content{
+/* .teachers-right .tab-content{
     
-}
+} */
 /* Card */
 .card {
     border-radius: 5px;
@@ -490,6 +490,6 @@ box-shadow: none !important;
 }
 
 .shopping-cart .megamenu-content .cart-footer .main-btn {
-    padding: 0 35px;
+    padding: 0 30%;
     font-size: 16px;
 }

@@ -2405,15 +2405,16 @@
 .icon-Towel:before {
   content: "\eadc";
 }
+.icon-Trash1{
+  width: 16px;
+}
 .icon-Trash1 .path1:before {
   content: "\eadd";
   
 }
 .icon-Trash1 .path2:before {
   content: "\eade";
-  margin-left: -1em;
-  
-  opacity: 0.3;
+  margin-left: -2em;
 }
 .icon-Water-mixer .path1:before {
   content: "\eadf";

@@ -232,6 +232,38 @@ p {
     background-color: #07294d;
 }
 
+.secondary-btn {
+	display: inline-block;
+	font-weight: 500;
+	text-align: center;
+	white-space: nowrap;
+	vertical-align: middle;
+	-webkit-user-select: none;
+	-moz-user-select: none;
+	-ms-user-select: none;
+	user-select: none;
+	border: 1px solid #000;
+	padding: 0 35px;
+	font-size: 16px;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+	line-height: 50px;
+	border-radius: 5px;
+    color: #000;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 5;
+    -webkit-transition: 0.4s ease-in-out;
+    transition: 0.4s ease-in-out;
+    background-color: #fff;
+}
+.secondary-btn:hover{
+    color: #fff;
+    border-color: #07294d;
+    background-color: #07294d;
+}
+
 .cancel-btn{
     padding: 6px 10px 6px;
     background: #edf0f2;
@@ -245,6 +277,28 @@ p {
     border-color: #ffc600;
     background: #ffc600;
     transition: all .5s ease;
+}
+
+.btn-color-success{
+    color: #28a745;
+    background-color: #fff;
+    border: 1px solid #28a745;
+}
+.btn-color-success:hover{
+    color: #fff;
+    background-color: #28a745;
+    border: 1px solid #28a745;
+}
+
+.btn-color-danger{
+    color: #fff;
+    background-color: #dc3545;
+    border: 1px solid #dc3545;
+}
+.btn-color-danger:hover{
+    color: #fff;
+    background-color: #c82333;
+    border: 1px solid #c82333;
 }
 
 
@@ -1081,7 +1135,7 @@ p {
 }
 
 .singel-category {
-	padding: 20px 0;
+	padding: 20px 20px;
 	border-radius: 5px;
 	display: block;
 }

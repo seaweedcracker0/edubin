@@ -5,18 +5,22 @@ function loginController($scope) {
     $scope.registerType = [
         {
             value : 'Teacher',
+            string: 'Teacher',
             schoolType : false
         },
         {
             value: 'Parent',
+            string: 'Parent',
             schoolType : false
         },
         {
             value : 'Student',
+            string: 'Student',
             schoolType : false
         },
         {
             value : 'Uni/school/institutions',
+            string: 'Uni/school/institutions',
             schoolType : true
         }
     ]

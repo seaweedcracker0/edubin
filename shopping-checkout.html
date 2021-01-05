@@ -1,0 +1,378 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+
+    <!--====== Required meta tags ======-->
+    <meta charset="utf-8">
+    <meta http-equiv="x-ua-compatible" content="ie=edge">
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+
+    <!--====== Title ======-->
+    <title>EduVHub - Checkout</title>
+
+    @@include('./partials/head.html')
+
+</head>
+
+<body>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader rubix-cube">
+            <div class="layer layer-1"></div>
+            <div class="layer layer-2"></div>
+            <div class="layer layer-3 color-1"></div>
+            <div class="layer layer-4"></div>
+            <div class="layer layer-5"></div>
+            <div class="layer layer-6"></div>
+            <div class="layer layer-7"></div>
+            <div class="layer layer-8"></div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    @@include('./partials/header.html')
+
+    <!--====== HEADER PART ENDS ======-->
+
+    <!--====== SEARCH BOX PART START ======-->
+
+    <div class="search-box">
+        <div class="serach-form">
+            <div class="closebtn">
+                <span></span>
+                <span></span>
+            </div>
+            <form action="#">
+                <input type="text" placeholder="Search by keyword">
+                <button><i class="fa fa-search"></i></button>
+            </form>
+        </div> <!-- serach form -->
+    </div>
+
+    <!--====== SEARCH BOX PART ENDS ======-->
+
+    <!--====== PAGE BANNER PART START ======-->
+
+    <section id="page-banner" class="pt-105 pb-110 bg_cover" data-overlay="8"
+        style="background-image: url(images/page-banner-2.jpg)">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="page-banner-cont">
+                        <h2>Checkout</h2>
+                        <nav aria-label="breadcrumb">
+                            <ol class="breadcrumb">
+                                <li class="breadcrumb-item"><a href="#">Home</a></li>
+                                <li class="breadcrumb-item active" aria-current="page">Checkout</li>
+                            </ol>
+                        </nav>
+                    </div> <!-- page banner cont -->
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+    <!--====== PAGE BANNER PART ENDS ======-->
+
+    <!--====== SHOPPING CHECKOUT PART START ======-->
+
+    <section id="shopping-checkout-page" class="pt-90 pb-120 gray-bg">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6">
+                    <div class="contact-from mt-30">
+                        <div class="section-title">
+                            <h5>Billing Address</h5>
+                        </div> <!-- section title -->
+                        <div class="main-form pt-45">
+                            <form id="contact-form" action="#" method="post" data-toggle="validator">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="singel-form form-group">
+                                            <input name="firstName" type="text" placeholder="First Name"
+                                                data-error="First Name is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="singel-form form-group">
+                                            <input name="lastName" type="text" placeholder="Last Name"
+                                                data-error="Last Name is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="singel-form form-group">
+                                            <input name="companyName" type="text" placeholder="Company Name"
+                                                data-error="Company Name is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="singel-form form-group">
+                                            <input name="addressline1" type="text" placeholder="Address Line 1"
+                                                data-error="Address Line 1 is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="singel-form form-group">
+                                            <input name="addressline2" type="text" placeholder="Address Line 2"
+                                                data-error="Address Line 2 required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="singel-form form-group">
+                                            <input name="cityTown" type="text" placeholder="City / Town"
+                                                data-error="City / Town required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="singel-form form-group">
+                                            <input name="email" type="email" placeholder="Your Email"
+                                                data-error="Email required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="singel-form form-group">
+                                            <input name="phone" type="text" placeholder="Your Phone"
+                                                data-error="Phone required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <p class="form-message"></p>
+                                </div> <!-- row -->
+                            </form>
+                        </div> <!-- main form -->
+                    </div> <!--  contact from -->
+                </div>
+                <div class="col-lg-6">
+                    <div class="contact-from mt-30">
+                        <div class="section-title">
+                            <h5>Shipping Address</h5>
+                        </div> <!-- section title -->
+                        <div class="main-form pt-45">
+                            <form id="contact-form" action="#" method="post" data-toggle="validator">
+                                <div class="row">
+                                    <div class="col-md-6">
+                                        <div class="singel-form form-group">
+                                            <input name="firstName" type="text" placeholder="First Name"
+                                                data-error="First Name is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-md-6">
+                                        <div class="singel-form form-group">
+                                            <input name="lastName" type="text" placeholder="Last Name"
+                                                data-error="Last Name is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="singel-form form-group">
+                                            <input name="companyName" type="text" placeholder="Company Name"
+                                                data-error="Company Name is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="singel-form form-group">
+                                            <input name="addressline1" type="text" placeholder="Address Line 1"
+                                                data-error="Address Line 1 is required." required="required">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="singel-form form-group">
+                                            <input name="addressline2" type="text" placeholder="Address Line 2"
+                                                data-error="Address Line 2 required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="singel-form form-group">
+                                            <input name="cityTown" type="text" placeholder="City / Town"
+                                                data-error="City / Town required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="singel-form form-group">
+                                            <input name="email" type="email" placeholder="Your Email"
+                                                data-error="Email required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12 col-md-6">
+                                        <div class="singel-form form-group">
+                                            <input name="phone" type="text" placeholder="Your Phone"
+                                                data-error="Phone required.">
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <div class="col-12">
+                                        <div class="singel-form form-group">
+                                            <textarea name="comment" type="text" placeholder="Comment"
+                                                data-error="Comment required."></textarea>
+                                            <div class="help-block with-errors"></div>
+                                        </div> <!-- singel form -->
+                                    </div>
+                                    <p class="form-message"></p>
+                                </div> <!-- row -->
+                            </form>
+                        </div> <!-- main form -->
+                    </div> <!--  contact from -->
+                </div>
+            </div> <!-- row -->
+            <div class="row">
+                <div class="col-12">
+                    <div class="shopping-checkout-box box">
+                        <div class="box-header">
+                            <div class="section-title">
+                                <h5>Product Summary</h5>
+                            </div> <!-- section title -->
+                        </div>
+                        <div class="box-body">
+                            <div class="table-responsive">
+                                <table class="table table-bordered">
+                                    <thead>
+                                        <tr>
+                                            <th>Photo</th>
+                                            <th>Product</th>
+                                            <th>Quantity</th>
+                                            <th class="w-200">Price</th>
+                                        </tr>
+                                    </thead>
+                                    <tbody>
+                                        <tr>
+                                            <td><img src="images/avatar-111.jpg" alt=""
+                                                    width="80"></td>
+                                            <td>Computer Science</td>
+                                            <td>3</td>
+                                            <td>$270</td>
+                                        </tr>
+                                        <tr>
+                                            <td><img src="images/avatar-111.jpg" alt=""
+                                                    width="80"></td>
+                                            <td>Cisco Certified Network Associate</td>
+                                            <td>3</td>
+                                            <td>$270</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="3" class="text-right">Total</th>
+                                            <th>$1620</th>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" align="right">Coupan Discount</td>
+                                            <td>$1620</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" align="right">Delivery Charges</td>
+                                            <td>$50</td>
+                                        </tr>
+                                        <tr>
+                                            <td colspan="3" align="right">Tax</td>
+                                            <td>$18</td>
+                                        </tr>
+                                        <tr>
+                                            <th colspan="3" class="text-right font-size-24 font-weight-700">Payable
+                                                Amount</th>
+                                            <th class="font-size-24 font-weight-700">$1678</th>
+                                        </tr>
+                                    </tbody>
+                                </table>
+                            </div>
+                            <hr>
+                            <div class="row">
+                                <div class="col-6">
+                                    <h4 class="box-title mt-10 mb-15">Choose payment Option</h4>
+                                </div>
+                                <div class="col-6">
+                                    <h4 class="box-title mt-10 mb-15">General Info</h4>        
+                                </div>
+                            </div>
+                            
+                            <div id="pills-payments" class="row">
+                                <div class="col-6">
+                                    <!-- Nav tabs -->
+                                    <ul class="nav nav-tabs" role="tablist">
+                                        <li class="nav-item"> <a class="nav-link active" data-toggle="tab"
+                                                href="#debit-card" role="tab"><span class="hidden-sm-up"><i
+                                                        class="fa fa-cc"></i></span> <span class="hidden-xs-down">Mol
+                                                    Point</span></a> </li>
+                                        <li class="nav-item"> <a class="nav-link" data-toggle="tab" href="#paypal"
+                                                role="tab"><span class="hidden-sm-up"><i
+                                                        class="fa fa-paypal"></i></span>
+                                                <span class="hidden-xs-down">Paypal</span></a> </li>
+                                    </ul>
+
+                                    <!-- Tab panes -->
+                                    <div class="tab-content tabcontent-border">
+                                        <div class="tab-pane active" id="debit-card" role="tabpanel">
+                                            <div class="p-30">
+                                                You can pay your money through Mol Point, for more info <a class="default-anchor-link font-weight-600" href="">click
+                                                    here</a><br><br>
+                                                <button class="main-btn-reverse"><i class="fa fa-cc-paypal"></i> Pay
+                                                    with
+                                                    Mol Point</button>
+                                            </div>
+                                        </div>
+                                        <div class="tab-pane" id="paypal" role="tabpanel">
+                                            <div class="p-30">
+                                                You can pay your money through paypal, for more info <a class="default-anchor-link font-weight-600" href="">click
+                                                    here</a><br><br>
+                                                <button class="main-btn-reverse"><i class="fa fa-cc-paypal"></i> Pay
+                                                    with
+                                                    Paypal</button>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="col-6">                                                               
+                                    <p>Contrary to popular belief, Lorem Ipsum is not simply random text. It has roots
+                                        in a piece of classical Latin literature from 45 BC, making it over 2000 years
+                                        old. Richard McClintock.</p>
+                                    <p>It is a long established fact that a reader will be distracted by the readable
+                                        content of a page when looking at its layout. </p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div> <!-- container -->
+    </section>
+
+    <!--====== SHOPPING CHECKOUT PART ENDS ======-->
+
+    <!--====== FOOTER PART START ======-->
+
+    @@include('./partials/footer.html')
+
+    <!--====== FOOTER PART ENDS ======-->
+
+    <!--====== BACK TO TP PART START ======-->
+
+    <a href="#" class="back-to-top"><i class="fa fa-angle-up"></i></a>
+
+    <!--====== BACK TO TP PART ENDS ======-->
+
+
+    <!--====== JS PART START ======-->
+    @@include('./partials/foot.html')
+    <script src="js/index.js"></script>
+    <!--====== JS PART ENDS ======-->
+
+</body>
+
+</html>

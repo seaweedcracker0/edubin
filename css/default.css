@@ -952,6 +952,15 @@
 .font-size-16{
 	font-size: 16px;
 }
+.font-size-24{
+	font-size: 24px;
+}
 .font-weight-600{
 	font-weight: 600;
+}
+.font-weight-700{
+    font-weight: 700;
+}
+.font-weight-900{
+    font-weight: 900;
 }

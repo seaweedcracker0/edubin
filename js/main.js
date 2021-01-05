@@ -376,12 +376,12 @@ $(function() {
     
     //===== Nice Number
     
-    $('input[type="number"]').niceNumber({
-        // custom button text
-        buttonDecrement: "<i class='fa fa-sort-asc' ></i>",
-        buttonIncrement: "<i class='fa fa-sort-desc' ></i>",
+    // $('input[type="number"]').niceNumber({
+    //     // custom button text
+    //     buttonDecrement: "<i class='fa fa-sort-asc' ></i>",
+    //     buttonIncrement: "<i class='fa fa-sort-desc' ></i>",
 
-    });
+    // });
 
     
     

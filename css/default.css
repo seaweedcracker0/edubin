@@ -495,6 +495,15 @@
 	margin-right: 200px;
 }
 
+.mx-10 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+.my-10 {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
 
 /*-- Padding Top --*/
 
@@ -885,6 +894,14 @@
 }
 .pr-105 {
 	padding-right: 105px;
+}
+.px-10{
+	padding-left: 10px;
+	padding-right: 10px;
+}
+.py-10{
+	padding-left: 10px;
+	padding-right: 10px;
 }
 /* Background Color */
 .bg-lightest {

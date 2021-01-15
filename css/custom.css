@@ -549,3 +549,279 @@ box-shadow: none !important;
     border-top-left-radius: 5px;
     border-top-right-radius: 5px;
 }
+
+/* Chatroom */
+.chatroom-left-profile{
+    overflow: hidden;
+    width: auto;
+    height: 280px;
+    margin-bottom: 1rem;
+    overflow-y: auto;
+}
+
+.chatroom-left-profile::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5; 
+}
+  
+.chatroom-left-profile::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5; 
+}
+
+.chatroom-left-profile::-webkit-scrollbar-thumb {
+    background-color: #0052cc;
+}
+
+.icon-sub-menu.message-menu{
+    border-radius: 10px;
+}
+
+.chatroom-left-profile .media,
+.icon-sub-menu.message-menu .media {
+    padding: 1rem;
+    -webkit-transition: background-color .2s linear;
+    transition: background-color .2s linear;
+    border-radius: 10px;
+}
+
+.chatroom-left-profile .media > *,
+.icon-sub-menu.message-menu .media > *{
+    margin: 0rem 0.5rem;
+}
+
+.chatroom-left-profile .media-list-hover > .media:not(.media-list-header):not(.media-list-footer):hover, 
+.chatroom-left-profile .media-list-hover .media-list-body > .media:hover,
+.icon-sub-menu.message-menu .media-list-hover > .media:not(.media-list-header):not(.media-list-footer):hover,
+.icon-sub-menu.message-menu .media-list-hover .media-list-body > .media:hover
+{
+    background-color: #ebedf3;
+    cursor: pointer;
+}
+
+.chatroom-left-profile .media .avatar,
+.icon-sub-menu.message-menu .media .avatar {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.chatroom-left-profile .media .avatar-lg,
+.icon-sub-menu.message-menu .media .avatar-lg {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 1.286rem;
+}
+
+.chatroom-left-profile .media .avatar,
+.icon-sub-menu.message-menu .media .avatar {
+    flex-shrink: 0;
+}
+
+.chatroom-left-profile .media .avatar img,
+.icon-sub-menu.message-menu .media .avatar img {
+    width: 100%;
+    height: 100%;
+    border-radius: 100%;
+    vertical-align: top;
+}
+
+.chatroom-left-profile .avatar[class*='status-']::after, 
+.icon-sub-menu.message-menu .avatar[class*='status-']::after{
+    content: '';
+    position: absolute;
+    right: 0px;
+    bottom: 0;
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    border-radius: 100%;
+    border: 2px solid #ffffff;
+}
+
+.chatroom-left-profile .avatar[class*='status-']::after,
+.icon-sub-menu.message-menu .avatar[class*='status-']::after{
+    background-color: #0052cc;
+}
+
+.chatroom-left-profile .avatar[class*='status-'].avatar-lg::after,
+.icon-sub-menu.message-menu .avatar[class*='status-'].avatar-lg::after{
+    right: 4px;
+}
+
+.icon-sub-menu.message-menu .media p{
+    line-height: 22px;
+}
+
+.chatroom-left-profile .media-body {
+    flex: 1;
+    min-width: 0;
+}
+
+.chatroom-right-message{
+    border-radius: 10px;
+}
+
+.chatroom-right-message .box-header {
+    color: #172b4c;
+    display: block;
+    padding: 1.5rem 1.5rem;
+    position: relative;
+    border-bottom: 1px solid rgba(72, 94, 144, 0.16);
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+}
+
+.chatroom-right-message .mailbox-messages{
+    overflow: hidden;
+    width: auto;
+    height: 540px;
+    overflow-y: auto;
+    padding: 1.5rem 1.5rem;
+}
+
+.chatroom-right-message .mailbox-messages::-webkit-scrollbar-track,
+.icon-sub-menu.message-menu::-webkit-scrollbar-track {
+    -webkit-box-shadow: inset 0 0 6px rgba(0, 0, 0, 0.3);
+    background-color: #F5F5F5; 
+}
+  
+.chatroom-right-message .mailbox-messages::-webkit-scrollbar,
+.icon-sub-menu.message-menu::-webkit-scrollbar {
+    width: 5px;
+    background-color: #F5F5F5; 
+}
+
+.chatroom-right-message .mailbox-messages::-webkit-scrollbar-thumb,
+.icon-sub-menu.message-menu::-webkit-scrollbar-thumb {
+    background-color: #0052cc;
+}
+
+.chatroom-right-message .box-body .mailbox-messages .chat-logs .chat-msg{
+    clear: both;
+}
+
+.chat-msg.user div > .msg-avatar img {
+    border-radius: 10px;
+    float: left;
+}
+
+.avatar {
+    position: relative;
+    display: inline-block;
+    width: 36px;
+    height: 36px;
+    line-height: 36px;
+    text-align: center;
+    text-transform: uppercase;
+    border-radius: 10px;
+}
+
+.avatar-lg {
+    width: 48px;
+    height: 48px;
+    line-height: 48px;
+    font-size: 1.286rem;
+}
+
+.cm-msg-text {
+    background: #f3f6f9;
+    padding: 10px 15px 10px 15px;
+    color: #666;
+    max-width: 75%;
+    float: left;
+    margin-top: 10px;
+    position: relative;
+    margin-bottom: 20px;
+    border-radius: 10px;
+    word-break: break-all;
+}
+
+.chat-msg.self > .cm-msg-text {
+    float: right;
+    background: #0052cc;
+    color: white;
+}
+
+#chat-input {
+    background: #ffffff;
+    width: 100%;
+    position: relative;
+    height: 57px;
+    padding-top: 10px;
+    padding-right: 50px;
+    padding-bottom: 10px;
+    padding-left: 15px;
+    border: none;
+    resize: none;
+    outline: none;
+    color: #172b4c;
+    border-top: none;
+    border-bottom-right-radius: 10px;
+    border-bottom-left-radius: 10px;
+    overflow: hidden;
+}
+
+.chat-submit {
+    position: absolute;
+    bottom: 6px;
+    right: 10px;
+    background: transparent;
+    box-shadow: none;
+    border: none;
+    border-radius: 10px;
+    color: #5A5EB9;
+    width: 35px;
+    height: 35px;
+}
+
+.badge {
+    display: inline-block;
+    padding: 0.25em 0.4em;
+    font-size: 75%;
+    font-weight: 700;
+    line-height: 1;
+    text-align: center;
+    white-space: nowrap;
+    vertical-align: baseline;
+    border-radius: 0.25rem;
+    transition: color 0.15s ease-in-out, background-color 0.15s ease-in-out, border-color 0.15s ease-in-out, box-shadow 0.15s ease-in-out;
+}
+
+.badge-dot {
+    width: 8px;
+    height: 8px;
+    padding: 0;
+    border-radius: 100%;
+    vertical-align: middle;
+}
+
+.theme-primary .badge-primary {
+    background-color: #0052cc;
+    color: #ffffff;
+}
+
+.badge:empty {
+    display: inline-block;
+    vertical-align: inherit;
+}
+
+.badge-dot.badge-sm {
+    width: 6px;
+    height: 6px;
+}
+
+.icon-sub-menu.message-menu{
+    background-color: #ffffff;
+    width: 300px;
+    left: unset;
+    right: 0;
+    height: 500px;
+    overflow-y: auto;
+}

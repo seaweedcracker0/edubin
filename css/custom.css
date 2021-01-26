@@ -825,3 +825,115 @@ box-shadow: none !important;
     height: 500px;
     overflow-y: auto;
 }
+
+/* Quiz */
+.question-title{
+    padding-top: 18px;
+    font-size: 18px;
+}
+.quiz-action{
+    float: right;
+    padding-top: 25px;
+}
+
+.quiz-action a{
+    color: #07294d;
+}
+
+.quiz-action .main-btn:hover a, .quiz-action .main-btn-reverse:hover a{
+    color: #fff;
+}
+
+#quiz {
+    display:none;
+}
+
+ul.question-option {
+    list-style-type: none;
+    padding: 0;
+    padding-top: 20px;
+    margin: 0;
+}
+
+ul.question-option li{
+    display: flex;
+    align-items: center;
+    position: relative;
+    float: left;
+    width: 100%;
+    height: 80px;
+}
+
+ul.question-option li input[type=radio]{
+    position: absolute;
+    visibility: hidden;
+}
+
+ul.question-option li label{
+    display: block;
+    position: relative;
+    font-weight: 300;
+    font-size: 18px;
+    padding: 0;
+    margin: 0;
+    padding-left: 80px;
+    height: 30px;
+    z-index: 9;
+    cursor: pointer;
+    -webkit-transition: all 0.25s linear;
+}
+
+ul.question-option li:hover label{
+    opacity: 0.8;
+}
+
+ul.question-option li .check{
+    display: flex;
+    position: absolute;
+    border: 5px solid #07294d;
+    border-radius: 100%;
+    height: 25px;
+    width: 25px;
+    left: 20px;
+    z-index: 5;
+    transition: border .25s linear;
+    -webkit-transition: border .25s linear;
+}
+  
+ul.question-option li:hover .check {
+    opacity: 0.8;
+}
+  
+ul.question-option li .check::before {
+    display: block;
+    position: absolute;
+    content: '';
+    border-radius: 100%;
+    height: 10px;
+    width: 10px;
+    top: 2.5PX;
+    left: 2.5PX;
+    margin: auto;
+    transition: background 0.25s linear;
+    -webkit-transition: background 0.25s linear;
+}
+  
+/* input[type=radio]:checked ~ .check {
+    border: 5px solid #ffc600;
+} */
+
+input[type=radio]:checked ~ .check::before{
+    background: #ffc600;
+}
+  
+input[type=radio]:checked ~ label{
+    color: #07294d;
+}
+
+#prev { 
+    display: none;
+}
+
+#start {
+    display: none;
+}

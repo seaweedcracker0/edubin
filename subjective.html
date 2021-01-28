@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="edubin">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EduVHub</title>
+
+    @@include('./partials/head.html')
+</head>
+
+<body>
+    <!--====== PRELOADER PART START ======-->
+
+    <div class="preloader">
+        <div class="loader rubix-cube">
+            <div class="layer layer-1"></div>
+            <div class="layer layer-2"></div>
+            <div class="layer layer-3 color-1"></div>
+            <div class="layer layer-4"></div>
+            <div class="layer layer-5"></div>
+            <div class="layer layer-6"></div>
+            <div class="layer layer-7"></div>
+            <div class="layer layer-8"></div>
+        </div>
+    </div>
+
+    <!--====== PRELOADER PART START ======-->
+
+    <!--====== HEADER PART START ======-->
+
+    @@include('./partials/header.html')
+
+    <!--====== HEADER PART ENDS ======-->
+
+
+    <section id="quiz-single" class="pt-20 pb-90 gray-bg">
+        <div class="container">
+            <div class="row justify-content-center">
+                <div class="contact-from col-12">                    
+                    <div class="main-form col-12">
+                        <a class="default-anchor-link" href="subjectlist.html"><i class="fa fa-chevron-left"></i> Back</a>
+                        <form class="form">
+                            <div>
+                                <h4 class="pt-4">IT networking Subjective</h4>
+                                <hr class="my-15">
+                                <div class="singel-form form-group">
+                                    <label class="register-label">
+                                        1. Colour is chosen based on its function.</label>
+                                    <textarea name="question1" data-error="Question answer is required"
+                                        required="required"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div> <!-- singel form -->
+                                <div class="singel-form form-group">
+                                    <label class="register-label">
+                                        2. Domain of instructional technology 1977. 
+                                    </label>
+                                    <textarea name="question2" data-error="Question answer is required"
+                                    required="required"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div> <!-- singel form -->
+                                <div class="singel-form form-group">
+                                    <label class="register-label">3. Definition of instructional technology in local context. </label>
+                                    <textarea name="question3" data-error="Question answer is required"
+                                    required="required"></textarea>
+                                    <div class="help-block with-errors"></div>
+                                </div> <!-- singel form -->                                                          
+                            </div>
+                            <div class="d-flex justify-content-end">
+                                <button type="submit" class="register-btn mr-2">
+                                    <i class="ti-save-alt"></i> Submit
+                                </button>
+                            </div>
+                        </form>
+                    </div>
+                </div>
+            </div> <!-- row -->
+        </div> <!-- container -->
+    </section>
+
+
+    <!--====== FOOTER PART START ======-->
+
+    @@include('./partials/footer.html')
+
+    <!--====== FOOTER PART ENDS ======-->
+
+
+    <!--====== JS PART START ======-->
+
+    @@include('./partials/foot.html')
+    <script src="js/index.js"></script>
+
+    <!--====== JS PART ENDS ======-->
+</body>
+
+</html>

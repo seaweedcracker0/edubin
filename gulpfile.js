@@ -34,6 +34,12 @@ function jsVendor() {
       .pipe(gulp.dest(out))
 }
 
+function jsCkeditor(){
+    var out = folder.dist + "js/ckeditor";
+    return gulp.src('js/ckeditor/**')
+        .pipe(gulp.dest(out))
+}
+
 function js() {
     var out = folder.dist + "/js";
     return gulp.src('js/*.js')    
@@ -68,5 +74,5 @@ gulp.task("watch", gulp.parallel(watchFiles));
 // build
 gulp.task(
     "build",
-    gulp.series(html, css, jsVendor, js, asset, fonts)
+    gulp.series(html, css, jsVendor, jsCkeditor, js, asset, fonts)
 );

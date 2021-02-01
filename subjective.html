@@ -7,6 +7,7 @@
     <title>EduVHub</title>
 
     @@include('./partials/head.html')
+    <link rel="stylesheet" href="css/skins/moono-lisa/editor.css">
 </head>
 
 <body>
@@ -47,7 +48,7 @@
                                 <div class="singel-form form-group">
                                     <label class="register-label">
                                         1. Colour is chosen based on its function.</label>
-                                    <textarea name="question1" data-error="Question answer is required"
+                                    <textarea id="question1" name="question1" data-error="Question answer is required"
                                         required="required"></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div> <!-- singel form -->
@@ -55,13 +56,13 @@
                                     <label class="register-label">
                                         2. Domain of instructional technology 1977. 
                                     </label>
-                                    <textarea name="question2" data-error="Question answer is required"
+                                    <textarea id="question2" name="question2" data-error="Question answer is required"
                                     required="required"></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div> <!-- singel form -->
                                 <div class="singel-form form-group">
                                     <label class="register-label">3. Definition of instructional technology in local context. </label>
-                                    <textarea name="question3" data-error="Question answer is required"
+                                    <textarea id="question3" name="question3" data-error="Question answer is required"
                                     required="required"></textarea>
                                     <div class="help-block with-errors"></div>
                                 </div> <!-- singel form -->                                                          
@@ -90,6 +91,14 @@
 
     @@include('./partials/foot.html')
     <script src="js/index.js"></script>
+    <script src="js/ckeditor/ckeditor.js"></script>
+    <script>
+        // Replace the <textarea id="editor1"> with a CKEditor 4
+        // instance, using default configuration.
+        CKEDITOR.replace( 'question1' );
+        CKEDITOR.replace( 'question2' );
+        CKEDITOR.replace( 'question3' );
+    </script>
 
     <!--====== JS PART ENDS ======-->
 </body>

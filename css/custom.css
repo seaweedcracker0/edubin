@@ -965,3 +965,8 @@ input[type=radio]:checked ~ label{
 #subject-list ul li a i{
     margin-right: 10px;
 }
+
+.home-course-image img{
+    height: 250px;
+    width: 370px;
+}

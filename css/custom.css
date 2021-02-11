@@ -590,6 +590,11 @@ box-shadow: none !important;
     margin: 0rem 0.5rem;
 }
 
+.chatroom-left-profile .media-body input[type='submit']{
+    background: transparent;
+    padding: 0;
+}
+
 .chatroom-left-profile .media-list-hover > .media:not(.media-list-header):not(.media-list-footer):hover, 
 .chatroom-left-profile .media-list-hover .media-list-body > .media:hover,
 .icon-sub-menu.message-menu .media-list-hover > .media:not(.media-list-header):not(.media-list-footer):hover,

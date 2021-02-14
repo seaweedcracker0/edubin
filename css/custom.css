@@ -590,7 +590,7 @@ box-shadow: none !important;
     margin: 0rem 0.5rem;
 }
 
-.chatroom-left-profile .media-body input[type='submit']{
+.chatroom-left-profile .media-body button[type='submit']{
     background: transparent;
     padding: 0;
 }
